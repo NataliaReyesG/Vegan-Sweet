@@ -1,0 +1,17 @@
+* {
+    font-family:serif 
+  }
+
+  .bg-inicio {
+    height: 60vh;
+   
+ }
+
+ .bn-fondo{
+  background-image: url(../../../assets/img/corazones.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 70%;
+  padding: 6.7%;
+
+}

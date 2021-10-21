@@ -1,0 +1,28 @@
+<app-carrusel></app-carrusel>
+
+<div class=" container">
+    <h1 class="mg-letra text-center my-5">Postres registrados</h1>
+
+     <!--cards-->
+     <div class = "d-flex justify-content-center flex-wrap  ">
+       <div *ngFor ="let Product of productService.Products">
+       <div class="card mg-postre" style="width:25rem">
+           <img src="{{Product.file}}" class="card-img-top" alt="..." /> <!--user.file ,es para traer las imagenes cargadas por el usuario-->
+           <div class="card-body">
+             <h5 class="card-title">{{Product.name}}</h5>
+             <p class="card-text">{{Product.description}}
+             </p>
+             <p class="card-text">{{Product.price}}
+            </p>
+            <div class="d-flex justify-content-center flex-wrap">
+             <a href="/productsmenu" class="btn btn-primary">Pagar</a>
+            </div>
+               
+             
+           </div>
+         </div>
+       </div>
+     </div>
+   
+</div>
+<app-footer></app-footer>
